@@ -1,0 +1,45 @@
+:host {
+  display: block;
+}
+
+.btn {
+  background: #f1f2f3;
+  color: black;
+  border-radius: 4px;
+  border: none;
+  padding: 0 12px;
+  height: 38px;
+  outline: none;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  gap: 8px;
+}
+
+.btn.primary {
+  background-color: rgb(179, 5, 5);
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: rgb(64, 3, 3);
+  color: white;
+}
+
+.btn.secondary {
+  background-color: white;
+  color: rgb(119, 3, 3);
+  outline: auto;
+  outline-color: rgb(119, 3, 3);
+}
+
+.btn.secondary:hover {
+  background-color: rgb(179, 5, 5);
+  color: white;
+  outline: none;
+}
+

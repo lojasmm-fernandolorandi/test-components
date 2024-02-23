@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <link rel="stylesheet" href="/build/test-components.css">
+    <script type="module" src="/build/test-components.esm.js"></script>
+    <script nomodule src="/build/test-components.js"></script>
+  </head>
+  <body>
+    
+    <!-- <div class="container">
+      <div class="row">
+        <h3>Buttons</h3>
+      </div>
+      <div class="row space-between">
+        <mm-button text="Início" appearence="primary"></mm-button>
+        <mm-button text="Entrar em contato" appearence="secondary"></mm-button>
+      </div> -->
+
+      <div class="container">
+        <div class="row">
+          <h3>Modal</h3>
+        </div>
+        <div class="row space-between">
+          <mm-button text="Open modal" appearence="primary"></mm-button>
+          <mm-modal buttons='[{"text": "Confirm"}, {"text": "Cancel"}]' header="Modal de teste" appearence="primary">Você tem certeza que deseja realizar esta ação?</mm-modal>
+        </div>
+
+    </div>
+   
+  </body>
+  <script>
+    var btn = document.querySelector('mm-button');
+    var modal = document.querySelector('mm-modal');
+
+    btn.addEventListener('click', function() {
+      modal.isopen = true;
+    });
+  </script>
+</html>
